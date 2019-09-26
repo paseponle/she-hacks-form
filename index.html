@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>nodejs App</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./main.css">1
+</head>
+
+<body>
+    <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+
+
+
+    <div>
+        <div class="container contact">
+            <h1> Contact form</h1>
+        </div>
+        <form action="http://localhost:3000/details" method="GET">
+            <div class="container">
+                <div class="row">
+                    <div class="col-25">
+                        <label for="fname">Full Name</label>
+
+                    </div>
+                    <div class="col-75">
+                        <input 
+                        type="text" 
+                        id="email" 
+                        name="fullname" 
+                        placeholder="Enter full name" />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="email">Email Address</label>
+                    </div>
+                    <div class="col-75">
+                        <input 
+                        type="text" 
+                        id="email" name="email" placeholder="Enter email address" />
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-25">
+                        <label for="subject"> subject</label>
+                    </div>
+                    <div class="col-75">
+                        <textarea id="subject" name="subject" placeholder="Write something..."
+                            style="height:50px"></textarea>
+                    </div>
+
+                </div>
+                <div>
+                    <div class="col-25">
+                        <label for="message"> Message</label>
+                    </div>
+                    <div class="col-75"> <textarea id=" message" name="message" placeholder="Write a message..."
+                            style="height:200px"></textarea>
+                    </div>
+                </div>
+                <div class="row">
+                    <input type="submit" value="submit" />
+                </div>
+            </div>
+
+        </form>
+
+
+
+        <form action="http://localhost:3000/bookTicket" method="GET">
+            <h1 id="title"> BOOK A TRAIN TICKET NOW </h1>
+            <h6> <img src="#logo.jpg" alt="Metro Track" width="200" height="180"> </h6>
+         <div id="form-outer">
+         <p id="description">
+         BOOK A TICKET
+         </p>
+          
+         <div class="rowTab">
+             <div class="labels">
+             <label for="travelFrom">Travel from:</label>
+             </div>
+             <div class="rightTab">
+             <select id="dropdown" name="travelFrom" class="dropdown">
+             <option disabled selected value>Select an option</option>
+             <option value="Abuja">Abuja</option>
+             <option value="Kaduna">Kaduna</option>
+             <option value="Zaria">Zaria</option>
+             <option value="Lagos">Lagos</option>
+             <option value="Kano">Kano</option>
+             <option value="Enugu">Enugu</option>
+             <option value="other">Other</option>
+             </select>
+             </div>
+             </div>
+          
+          
+             <div class="rowTab">
+                 <div class="labels">
+                 <label for="travelTo"> Travel To: </label>
+                 </div>
+                 <div class="rightTab">
+                 <select id="most-like" name="travelTo" class="dropdown">
+                 <option disabled selected value>Select an option</option>
+                 <option value="Abuja">Abuja</option>
+                 <option value="Kaduna">Kaduna</option>
+                 <option value="Zaria">Zaria</option>
+                 <option value="Lagos">Lagos</option>
+                 <option value="Kano">Kano</option>
+                 <option value="Enugu">Enugu</option>
+                 <option value="other">Other</option>
+                 </select>
+                 </div>
+                 </div>
+          
+          
+         <div class="rowTab">
+         <div class="labels">
+         <label id="name-label" for="name"> Name: </label>
+         </div>
+         <div class="rightTab">
+         <input autofocus type="text" name="name" id="name" class="input-field" placeholder="Enter your name" required>
+         </div>
+         </div>
+          
+         <div class="rowTab">
+         <div class="labels">
+         <label id="email-label" for="email"> Email: </label>
+         </div>
+         <div class="rightTab">
+         <input type="email" name="email" id="email" class="input-field" required placeholder="Enter your Email">
+         </div>
+         </div>
+          
+          
+          
+          
+         <div class="rowTab">
+         <div class="labels">
+         <label id="number-label" for="age"> Age: </label>
+         </div>
+         <div class="rightTab">
+         <input type="number" name="age" id="number" min="1" max="125" class="input-field" placeholder="Age">
+         </div>
+         </div>
+          
+          
+         <div class="rowTab">
+             <div class="labels">
+             <label id="Departure" for="Departure"> Date of Departure: </label>
+             </div>
+             <div class="rightTab">
+             <input type="date" name="Departure" id="Departure" class="input-field" required placeholder="Departure">
+             </div>
+             </div>
+          
+          
+          
+         <div>
+         <button id="submit" type="submit">BOOK NOW</button>
+         </form>
+         </div>
+          
+         
+
+
+        </form>
+
+    </div>
+
+
+
+    
+
+
+    <script src=""></script>
+</body>
+
+</html>
